@@ -2,5 +2,3 @@ line:
   bot:
     channel-token: OhVZSaOzP0m5RrLOvvK1XVx0wOKZuyGbiiYf8xO9qUzS7UDX15dYNtq8dwn+lw1nFbbVRwZ0JwtYJhIV6Ik3OFJriaQs1DakSDSAm+amEOACmKE91P/bEaeeRRztPJHUQU5CDOaf6pabNt8kclWX7QdB04t89/1O/w1cDnyilFU=
     channel-secret: 7c9ce84b84a8c8ce0675b414863d3851
-    handler:      path: /callback
-              
