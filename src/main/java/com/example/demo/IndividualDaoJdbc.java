@@ -23,4 +23,13 @@ public class IndividualDaoJdbc {
 
 	}
 
+	public int deleteMember(String userid)  throws DataAccessException {
+
+
+		int rowNumber = jdbc.update("delete from line_member where userid=?", userid);
+
+		return rowNumber;
+
+	}
+
 }

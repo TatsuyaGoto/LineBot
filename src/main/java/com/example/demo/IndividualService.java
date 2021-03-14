@@ -24,5 +24,17 @@ public class IndividualService {
 
 	}
 
+	public void delete(String userid) {
+
+		System.out.println("delete member");
+
+		int rowNumber = individualDao.deleteMember(userid);
+
+		if(rowNumber > 0) {
+			System.out.println("Success");
+		}
+
+	}
+
 
 }
