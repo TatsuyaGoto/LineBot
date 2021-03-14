@@ -16,6 +16,7 @@ public class EchoApplication {
 
 	@Autowired
 	PushService pushService;
+	IndividualService individualService;
 
 	public static void main(String[] args) {
         SpringApplication.run(EchoApplication.class, args);
@@ -28,6 +29,7 @@ public class EchoApplication {
 
         if (msg.equals("userid") ) {
         	pushService.pushMessage(event.getSource().getUserId());
+        	individualService.insert(event.getSource().getUserId());
         	return new TextMessage( event.getSource().getUserId() );
         }
         return null;
