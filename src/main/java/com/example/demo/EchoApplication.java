@@ -16,6 +16,7 @@ public class EchoApplication {
 
 	@Autowired
 	PushService pushService;
+	@Autowired
 	IndividualService individualService;
 
 	public static void main(String[] args) {

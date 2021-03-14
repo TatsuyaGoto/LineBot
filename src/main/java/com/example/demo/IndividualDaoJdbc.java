@@ -13,6 +13,7 @@ public class IndividualDaoJdbc {
 
 	public int insertMember(String userid)  throws DataAccessException {
 
+
 		int rowNumber = jdbc.update("insert into line_member("
 				+ " userid)"
 				+ " values(?)"

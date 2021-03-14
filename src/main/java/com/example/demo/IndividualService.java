@@ -12,17 +12,15 @@ public class IndividualService {
 	@Autowired
 	IndividualDaoJdbc individualDao;
 
-	public boolean insert(String userid) {
+	public void insert(String userid) {
+
+		System.out.println("insert member");
 
 		int rowNumber = individualDao.insertMember(userid);
 
-		boolean result = false;
-
 		if(rowNumber > 0) {
-			result = true;
+			System.out.println("Success");
 		}
-
-		return result;
 
 	}
 
