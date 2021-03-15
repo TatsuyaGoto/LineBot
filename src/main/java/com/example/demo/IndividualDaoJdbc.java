@@ -16,7 +16,7 @@ public class IndividualDaoJdbc {
 
 		int rowNumber = jdbc.update("insert into line_member("
 				+ " userid)"
-				+ " values(?)"
+				+ " values(?) on conflict do nothing"
 				, userid);
 
 		return rowNumber;

@@ -44,6 +44,7 @@ public class EchoApplication {
         return new TextMessage("ラビータの開催案内をお知らせします");
     }
 
+    @EventMapping
     public TextMessage handleUnfollowEvent(UnfollowEvent event) {
 
     	individualService.delete(event.getSource().getUserId());
